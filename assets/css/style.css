@@ -409,18 +409,19 @@ input {
     align-items: center;
     flex-direction: column;
     margin: 10px;
-    padding: 10px;
+    padding: 15px;
     color: rgba(26, 71, 38);
 }
 .mono h4 {
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 15px;
     
     
 }
 .mono p {
     color: black;
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 25px;
 }
 .cierreMono1{
     display: flex;
@@ -428,25 +429,31 @@ input {
     
 }
 .mono1{
-    width: 250px;
+    width: 180px;
 
 }
 .mono2{
-    width: 250px;
+    width: 180px;
 }
 .mono3{
-    width: 500px;
+    width: 360px;
     margin-bottom: 20px;
 }
 .ddp1{
-    width: 200px;
+    width: 250px;
+    height: 250px;
     
 }
 .ddp2{
-    width: 300px;
+    width: 250px;
+    height: 250px;
 }
 .ddp{
     margin-top: 20px;
+}
+.hilo2{
+    width: 50px;
+
 }
 @media (min-width: 1200px){
     .container{
@@ -813,4 +820,246 @@ margin-bottom: 10px;
         justify-content: center;
         margin-bottom: 50px;    
     }
+}
+@media (min-width: 780px){
+    .container{
+        grid-template-rows: 110px auto auto  100px ;
+    }
+    .nav{
+        display: flex;       
+        justify-content: space-between;
+    
+    
+    }
+    .navImg img{
+        width: 150px;
+        padding: 10px 10px 10px 10px;
+        margin-top: 20px;
+        margin-left: 20px;
+    
+    }
+
+    .listaNav ul {
+        font-size: 20px;
+    }
+
+    .listaNav ul li a{
+        margin-right: 20px;
+        padding: 10px;
+
+    }
+
+
+
+.slogan h2{
+font-size: 60px;
+margin-top: 10px;
+padding: 10px;
+margin-bottom: 10px;
+}
+.slogan h3{
+    font-size: 30px;
+    margin-bottom: 90px;
+}
+
+.section{
+
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.subTitulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+
+    width: 100%;
+}
+.cierres{
+    width: 50%;
+
+}
+.cierres{
+    color: rgba(26, 71, 38);
+    font-size: 40px;
+    margin-bottom: 25px;
+    }
+
+.cierres img {
+    width: 250px;
+    padding: 30px;
+}
+.cierres button{
+    margin-top: 30px;
+}
+.cintas{
+    width: 50%;
+
+    color: rgba(26, 71, 38);
+    font-size: 40px;
+
+}
+.cintas h4{
+    margin-bottom: 25px;
+    padding: 5px;
+}
+.cintas img{
+    width: 150px;
+    padding: 20px;
+    margin-bottom: 60px;
+    margin-top: 15px;
+}
+.hilos{
+    width: 50%;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.hilos h4{
+    margin: 15px;
+    padding: 15px;
+}
+.hilos img {
+    width: 250px;
+}
+.guata{
+    width: 50%;
+    color: rgba(26, 71, 38);
+    font-size: 40px;
+    background-color: white;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+.guata h4 {
+    margin-top: 30px;
+    padding: 1px;
+}
+.guata img {
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 30px;
+
+}
+.btn{
+
+    width: 120px;
+    height: 30px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    
+} 
+
+.footer{
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;
+    color: black;
+    align-items: center;
+}
+.footer div  {
+    margin-right: 20px;
+}
+.footer div a img {
+    width: 50px;
+    padding-top: 5px;
+    margin: 15px;
+}
+
+.copi{
+    height: 90%;
+    display: flex;
+
+    align-items: flex-end;
+
+    padding: 10px;
+
+}
+.header img{
+    width: 350px;
+    margin-bottom: 60px;
+    margin-top: 30px;
+
+}
+.header{
+
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 30px;
+    }
+  
+    .parrafo{
+        margin: 18px;
+        color: rgba(26, 71, 38);
+        font-size: 28px;
+
+      }
+
+      .somos{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        color: rgba(26, 71, 38);
+        font-size: 28px;
+     
+
+        border: 0px solid black;
+        margin: 25px;
+        
+      }
+      .somos h4 {
+        font-size: 20px;
+        margin-left: 30px;
+        
+      }
+      .somos img {
+        padding: 10px;
+        width: 200px;
+      }
+      .somos p{
+        font-size: 35px;
+        padding: 25px;
+    
+    
+        height: 300px;
+      }
+
+
+    .btn input{
+        font-size: 16px;
+    }
+    .btn{
+        height: 50px;
+    }
+    
+   .logosContacto {
+
+    width: 50%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 5px;
+   }
+   .logoRedesContacto{
+
+    width: 50%;
+    align-items: flex-start;
+   }
+   .divInstagram img {
+    width: 50px;
+   }
+   .divDatos img {
+    width: 50px;
+   }
+
+    
+    
+    
 }
