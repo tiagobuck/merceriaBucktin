@@ -27,9 +27,10 @@
 
 }
 .navImg img{
-    width: 120px;
+    width: 80px;
     padding: 15px 10px 10px 10px;
     align-items: center;
+    margin-top: 10px;
 
 }
 .listaNav{
@@ -42,7 +43,7 @@
     justify-content: center;
     list-style: none;
     align-items: center;
-    font-size: 16px;
+    font-size: 12px;
 }
 .listaNav ul li :hover{
     background-color: aquamarine;
@@ -72,16 +73,16 @@
     align-items: center;
     color: rgba(26, 71, 38);
 
-   margin: 30px;
+   margin: 20px;
    
 }
 .slogan h2{
-font-size: 45px;
+font-size: 25px;
 margin-top: 25px;
 padding: 10px;
 }
 .slogan h3{
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 10px;
     margin-bottom: 25px;
 }
@@ -94,7 +95,7 @@ padding: 10px;
 }
 .subTitulo{
     margin: 10px 5px 35px 5px;
-    font-size: 20px;
+    font-size: 18px;
     color: rgba(26, 71, 38);
 }
 .cierres{
@@ -186,7 +187,7 @@ padding: 10px;
 .footer{
     grid-area: footer;
     background-color: rgba(26, 71, 38);
-    font-size: 20px;
+    font-size: 16px;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
@@ -194,7 +195,7 @@ padding: 10px;
     align-items: center;
 }
 .footer div a img {
-    width: 50px;
+    width: 45px;
     padding-top: 5px;
     margin: 10px;
 }
@@ -203,14 +204,14 @@ padding: 10px;
     padding: 10px;
 }
 .header img{
-    width: 300px;
+    width: 200px;
     margin-top: 15px;
 
 }
 .header{
     grid-area: header;
     color: rgba(26, 71, 38);
-    font-size: 45px;
+    font-size: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
