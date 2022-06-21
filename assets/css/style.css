@@ -1,0 +1,810 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Josefin Sans', sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 80px auto auto  120px ;
+    grid-template-areas: "navBar   navBar   navBar navBar navBar"
+                         "header   header   header header header"
+                         "main     main     main   main   main"
+                         "footer   footer   footer footer footer" ;
+                    
+}
+.nav{
+    grid-area: navBar;
+    display: flex;
+    background-color: rgba(26, 71, 38);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    overflow: hidden;
+    justify-content: space-evenly;
+
+
+}
+.navImg img{
+    width: 120px;
+    padding: 15px 10px 10px 10px;
+    align-items: center;
+
+}
+.listaNav{
+    display: flex;
+    list-style: none;
+
+}
+.listaNav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    font-size: 16px;
+}
+.listaNav ul li :hover{
+    background-color: aquamarine;
+    color: black;
+}
+.listaNav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    align-items: center;
+
+}
+
+
+    
+
+.main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+}
+.slogan{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(26, 71, 38);
+
+   margin: 30px;
+   
+}
+.slogan h2{
+font-size: 45px;
+margin-top: 25px;
+padding: 10px;
+}
+.slogan h3{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.subTitulo{
+    margin: 10px 5px 35px 5px;
+    font-size: 20px;
+    color: rgba(26, 71, 38);
+}
+.cierres{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(26, 71, 38);
+    font-size: 28px;
+    background-color: white;
+    border-radius: 30px;
+    margin-bottom: 25px;
+    }
+.cierres h4{
+        margin: 15px;
+        padding: 15px;
+    }
+.cierres img {
+    width: 300px;
+}
+.cierres button{
+    margin-top: 10px;
+}
+.cintas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(26, 71, 38);
+    font-size: 28px;
+    background-color: white;
+    border-radius: 30px;
+}
+.cintas h4{
+    margin: 15px;
+    padding: 15px;
+}
+.cintas img{
+    width: 300px;
+    padding: 1px 50px 1px 50px;
+}
+.hilos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(26, 71, 38);
+    font-size: 28px;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.hilos h4{
+    margin: 15px;
+    padding: 15px;
+}
+.hilos img {
+    width: 300px;
+}
+.guata{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(26, 71, 38);
+    font-size: 28px;
+    background-color: white;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.guata h4 {
+    margin: 15px;
+    padding: 15px;
+}
+.guata img {
+    width: 300px;
+    padding: 25px;
+}
+.btn{
+    background-color: rgba(26, 71, 38);
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    
+} 
+.btn a {
+    font-style: none;
+    text-decoration: none;
+    color: white;
+}
+.footer{
+    grid-area: footer;
+    background-color: rgba(26, 71, 38);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    color: black;
+    align-items: center;
+}
+.footer div a img {
+    width: 50px;
+    padding-top: 5px;
+    margin: 10px;
+}
+.copi{
+    margin-bottom: 5px;
+    padding: 10px;
+}
+.header img{
+    width: 300px;
+    margin-top: 15px;
+
+}
+.header{
+    grid-area: header;
+    color: rgba(26, 71, 38);
+    font-size: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+  .parrafo{
+    margin: 18px;
+    color: rgba(26, 71, 38);
+    font-size: 20px;
+    
+  }
+  .parrafo p {
+    padding: 15px;
+
+    align-items: center;
+    line-height: 40px;
+    
+  }
+  .somos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(26, 71, 38);
+    font-size: 28px;
+    border-radius: 30px;
+    margin-bottom: 25px;
+    border: 1px solid black;
+    margin: 25px;
+    
+  }
+  .somos img {
+    padding: 30px;
+  }
+  .somos p{
+    font-size: 25px;
+    padding: 15px;
+  }
+.divForm { 
+    display: flex;    
+    color: rgba(26, 71, 38);
+    font-size: 30px;
+
+}
+textarea {
+    border: 4px solid rgba(26, 71, 38);
+    border-radius: 15px;
+    background-color: rgba(208, 255, 229);
+    color: black;
+    font-size: 25px;
+    padding: 5px;
+    margin: 10px 10px 1px 10px;
+}
+input {
+    border: 4px solid rgba(26, 71, 38);
+    border-radius: 15px;
+    background-color: rgba(208, 255, 229);
+    color: black;
+    font-size: 20px;
+    padding: 5px;
+    margin: 10px;
+}
+.formularioContacto{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   margin-left: 60px;
+  margin-top: 5px;
+  padding: 30px;
+  margin-bottom: 50px; 
+ 
+
+
+    
+}
+.formulariocontacto div{
+    margin-top: 15px;
+    border-radius: 60px;
+
+
+}
+.btnBtn{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    
+ 
+}
+.btnBtn input{
+    background-color: rgba(26, 71, 38);
+    font-size: 24px;
+    align-items: center;
+    margin: 1px;
+    font-style: none;
+    text-decoration: none;
+
+
+}
+.logoRedesContacto{
+  
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+    padding: 10px;
+    width: auto;
+    justify-content: space-evenly;
+    
+}
+
+.logoRedesContacto img{
+    width: 40px;
+    margin-bottom: 10px;
+    
+}
+.logoRedesContacto h5 {
+    display: flex;
+}
+.logosContacto img {
+
+    width: 40px;
+
+}
+.logosContacto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 10px;
+    justify-content: space-between;
+    width: auto;
+}
+
+
+.sectionContactos{
+    margin: 6px;
+    padding: 6px;
+    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-items: center;
+
+    
+}
+.divInstagram{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+ 
+    
+    margin-bottom: 10px;
+}
+.divInstagram h5{
+    margin-bottom: 30px;
+    margin-left: 15px;
+    font-size: 15px;
+    color: rgba(26, 71, 38);
+    align-items: center;
+}
+.divDatos{
+    display: flex;
+    flex-direction: row-reverse;  
+    align-items: center;
+    margin-bottom: 80px;
+}
+.divDatos h5 {
+    font-size: 19px;
+    margin-left: 5px;
+    color: rgba(26, 71, 38);
+    
+}
+.slogan1{
+    display: flex;
+    justify-content: center;
+    
+}
+.slogan1 h5 {
+    font-size: 35px;
+    color: rgba(26, 71, 38);
+    margin-top: 50px;
+}
+.maps{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;    
+}
+.mono{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    color: rgba(26, 71, 38);
+}
+.mono h4 {
+    font-size: 50px;
+    margin-bottom: 15px;
+    
+    
+}
+.mono p {
+    color: black;
+    font-size: 20px;
+}
+.cierreMono1{
+    display: flex;
+    margin-top: 20px;
+    
+}
+.mono1{
+    width: 250px;
+
+}
+.mono2{
+    width: 250px;
+}
+.mono3{
+    width: 500px;
+    margin-bottom: 20px;
+}
+.ddp1{
+    width: 200px;
+    
+}
+.ddp2{
+    width: 300px;
+}
+.ddp{
+    margin-top: 20px;
+}
+@media (min-width: 1200px){
+    .container{
+        grid-template-rows: 110px auto auto  100px ;
+    }
+    .nav{
+        display: flex;       
+        justify-content: space-between;
+    
+    
+    }
+    .navImg img{
+        width: 150px;
+        padding: 10px 10px 10px 10px;
+        margin-top: 20px;
+        margin-left: 20px;
+    
+    }
+
+    .listaNav ul {
+        font-size: 20px;
+    }
+
+    .listaNav ul li a{
+        margin-right: 20px;
+        padding: 10px;
+
+    }
+
+
+.slogan{
+
+    margin: 0px;
+
+
+    
+}
+.slogan h2{
+font-size: 90px;
+margin-top: 10px;
+padding: 20px;
+margin-bottom: 10px;
+}
+.slogan h3{
+    font-size: 50px;
+    margin-bottom: 90px;
+}
+
+.section{
+
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.subTitulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 40px;
+
+    width: 100%;
+}
+.cierres{
+    width: 50%;
+
+}
+.cierres{
+    color: rgba(26, 71, 38);
+    font-size: 60px;
+    margin-bottom: 35px;
+    }
+
+.cierres img {
+    width: 300px;
+    padding: 30px;
+}
+.cierres button{
+    margin-top: 50px;
+}
+.cintas{
+    width: 50%;
+
+    color: rgba(26, 71, 38);
+    font-size: 60px;
+
+}
+.cintas h4{
+    margin-bottom: 35px;
+    padding: 5px;
+}
+.cintas img{
+    width: 200px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.hilos{
+    width: 50%;
+    font-size: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.hilos h4{
+    margin: 15px;
+    padding: 15px;
+}
+.hilos img {
+    width: 300px;
+}
+.guata{
+    width: 50%;
+    color: rgba(26, 71, 38);
+    font-size: 60px;
+    background-color: white;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+.guata h4 {
+    margin: 1px;
+    padding: 1px;
+}
+.guata img {
+    width: 300px;
+    padding: 30px;
+}
+.btn{
+
+    width: 120px;
+    height: 30px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    
+} 
+
+.footer{
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;
+    color: black;
+    align-items: center;
+}
+.footer div  {
+    margin-right: 100px;
+}
+.footer div a img {
+    width: 50px;
+    padding-top: 5px;
+    margin: 15px;
+}
+
+.copi{
+    height: 90%;
+    display: flex;
+
+    align-items: flex-end;
+
+    padding: 10px;
+
+}
+.header img{
+    width: 350px;
+    margin-bottom: 60px;
+    margin-top: 30px;
+
+}
+.header{
+
+    font-size: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 30px;
+    }
+  
+    .parrafo{
+        margin: 18px;
+        color: rgba(26, 71, 38);
+        font-size: 28px;
+        background-image: url(../img/fondo3\ \(1\).jpg);
+        background-repeat: no-repeat;
+        background-position: right;
+                
+      }
+      .parrafo p {
+        width: 50%;
+        padding: 5px;
+        justify-content: end;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        line-height: 30px;
+        
+      }
+      .somos{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        color: rgba(26, 71, 38);
+        font-size: 28px;
+     
+
+        border: 0px solid black;
+        margin: 25px;
+        
+      }
+      .somos h4 {
+        font-size: 20px;
+        margin-left: 30px;
+        
+      }
+      .somos img {
+        padding: 30px;
+        width: 300px;
+      }
+      .somos p{
+        font-size: 35px;
+        padding: 25px;
+    
+    
+        height: 300px;
+      }
+      .subDatos{
+        display: flex;
+        align-items: left;
+        margin-left: 40px;
+        width: 80%;
+      }
+
+
+    input {
+        border: px solid rgba(26, 71, 38);
+        border-radius: 15px;
+        background-color: rgba(208, 255, 229);
+        color: black;
+        font-size: 20px;
+        padding: 5px;
+        margin: 10px;
+    }
+    .formularioContacto{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: center;
+       margin-left: 60px;
+      margin-top: 5px;
+      padding: 30px;
+      margin-bottom: 50px; 
+     
+    
+    
+        
+    }
+    .formulariocontacto div{
+        margin-top: 15px;
+        border-radius: 60px;
+    
+    
+    }
+    .btnBtn{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+        
+     
+    }
+    .btnBtn input{
+        background-color: rgba(26, 71, 38);
+        font-size: 24px;
+        align-items: center;
+        margin: 1px;
+        font-style: none;
+        text-decoration: none;
+    
+    
+    }
+    .logoRedesContacto{
+      
+        display: flex;
+        flex-direction: column;
+        margin-right: 5px;
+        padding: 10px;
+        width: auto;
+        justify-content: space-evenly;
+        
+    }
+    
+    .logoRedesContacto img{
+        width: 40px;
+        margin-bottom: 10px;
+        
+    }
+    .logoRedesContacto h5 {
+        display: flex;
+    }
+    .logosContacto img {
+    
+        width: 40px;
+    
+    }
+    .logosContacto {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-right: 10px;
+        justify-content: space-between;
+        width: auto;
+    }
+    
+    
+    .sectionContactos{
+        margin: 6px;
+        padding: 6px;
+        
+        display: flex;
+        flex-direction: row-reverse;
+        justify-items: center;
+    
+        
+    }
+    .divInstagram{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+     
+        
+        margin-bottom: 10px;
+    }
+    .divInstagram h5{
+        margin-bottom: 30px;
+        margin-left: 15px;
+        font-size: 15px;
+        color: rgba(26, 71, 38);
+        align-items: center;
+    }
+    .divDatos{
+        display: flex;
+        flex-direction: row-reverse;  
+        align-items: center;
+        margin-bottom: 80px;
+    }
+    .divDatos h5 {
+        font-size: 19px;
+        margin-left: 5px;
+        color: rgba(26, 71, 38);
+        
+    }
+    .slogan1{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .slogan1 h5 {
+        font-size: 35px;
+        color: rgba(26, 71, 38);
+        margin-top: 50px;
+    }
+    .maps{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;    
+    }
+}
