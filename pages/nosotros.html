@@ -7,6 +7,7 @@
     <title>Dos Pandas - INICIO</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="shortcut icon" href="../assets/img/miniLogo.jpg" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="container">
     <nav class="nav">
@@ -16,17 +17,21 @@
         <div class="listaNav">
             <ul>
                 <li><a href="../index.html">INICIO</a></li>
-                <li><a href="./pages/nosotros.html">NOSOTROS</a></li>
+                <li><a href="../pages/nosotros.html">NOSOTROS</a></li>
                 <li><a href="../pages/productos.html">PRODUCTOS</a></li>
                 <li><a href="../pages/contactos.html">CONTACTOS</a></li>
             </ul>
         </div>
     </nav>
-    <header class="header">
+    <header data-aos="fade-left"
+    data-aos-offset="600"
+    data-aos-easing="ease-in-sine"class="header">
         <img src="../assets/img/Isologo Merceria Final.png" alt="">
         <h1>Dos Pandas</h1>
     </header>
-    <main class="main">
+    <main data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine"class="main">
         <div class="slogan">
             <h2 class="quinesSomos">QUIENES SOMOS?</h2>
         </div>
@@ -68,4 +73,8 @@
     </footer>
     
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </html>
