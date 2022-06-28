@@ -184,21 +184,15 @@ padding: 10px;
     text-decoration: none;
     color: white;
 }
+
 .footer{
-    grid-area: footer;
     background-color: rgba(26, 71, 38);
-    font-size: 16px;
-    display: flex;
     flex-direction: column-reverse;
-    justify-content: space-between;
-    color: black;
-    align-items: center;
+    
 }
-.footer div a img {
-    width: 45px;
-    padding-top: 5px;
-    margin: 10px;
-}
+
+
+
 .copi{
     margin-bottom: 5px;
     padding: 10px;
@@ -590,31 +584,6 @@ margin-bottom: 10px;
     
 } 
 
-.footer{
-    display: flex;
-    flex-direction: row;  
-    justify-content: space-between;
-    color: black;
-    align-items: center;
-}
-.footer div  {
-    margin-right: 100px;
-}
-.footer div a img {
-    width: 50px;
-    padding-top: 5px;
-    margin: 15px;
-}
-
-.copi{
-    height: 90%;
-    display: flex;
-
-    align-items: flex-end;
-
-    padding: 10px;
-
-}
 .header img{
     width: 350px;
     margin-bottom: 60px;
@@ -953,21 +922,6 @@ margin-bottom: 10px;
     
 } 
 
-.footer{
-    display: flex;
-    flex-direction: row;  
-    justify-content: space-between;
-    color: black;
-    align-items: center;
-}
-.footer div  {
-    margin-right: 20px;
-}
-.footer div a img {
-    width: 50px;
-    padding-top: 5px;
-    margin: 15px;
-}
 
 .copi{
     height: 90%;
